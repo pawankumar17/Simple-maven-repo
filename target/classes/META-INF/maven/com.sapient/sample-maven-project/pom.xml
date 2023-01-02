@@ -51,6 +51,10 @@
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.0.2</version>
+          <configuration>
+          <archive>
+          <manifest>
+          <mainClass>com.sapient.app.App</mainClass></manifest></archive></configuration>
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
@@ -69,6 +73,17 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
+        <plugin>
+<artifactId>maven-jar-plugin</artifactId>
+<version>3.2.0</version>
+<configuration>
+<archive>
+<manifest>
+<mainClass>com.sapient.trg.pl.App</mainClass>
+</manifest>
+</archive>
+</configuration>
+</plugin>
       </plugins>
     </pluginManagement>
   </build>
